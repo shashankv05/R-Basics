@@ -10,11 +10,11 @@ log(-1)  # Warnings
 
                          # invisible
 # If I call invisible on the return object,then it will still return the 
-# same object but it won't, it wont do the auto printing.
-#  for eg, load function and when it loads the objects,
+# same object it won't do the auto printing.
+# for eg, load function and when it loads the objects,
 # it actually returns a character vector 
 # containing the names of all the objects that it loads.
-# But that doesn't get printed to the screen and because, it's returned invisibly.
+# But that doesn't get printed to the screen and because, it returns invisibly.
 
 printMessage <- function(x){
         
