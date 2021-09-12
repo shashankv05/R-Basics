@@ -21,7 +21,7 @@ lapply(x, runif, min = 0, max = 10)
 
 x <- list(a = matrix(1:4,2,2), b = matrix(1:6,3,2))
 
-x[[1]][, 1] #Extraction the first column
+x[[1]][, 1] #Extracting the first column
  
 lapply(x, function(elt) elt[ , 1]) 
 # x$a[, 2]
@@ -78,7 +78,7 @@ colMeans(a,dims = 2)
 
                       # mapply
 
-# So mapply is, can be used to apply a function to multiple sets of arguments.
+# So mapply can be used to apply a function to multiple sets of arguments.
 
 str(mapply)
 
@@ -94,12 +94,12 @@ noise <- function(n, mean, sd){
   
 }
 
-noise(5, 1, 2)
-#I get 5 random normal variables with the mean 1 and standard variation 2.
+noise(5, 1, 1)
+#I get 5 random normal variables with the mean 1 and standard variation 1.
 
-noise(1:5, 1:5, 2)  # This will not return the desired result we need to use mapply 
+noise(1:5, 1:5, 1)  # This will not return the desired result we need to use mapply 
 
-mapply(noise, 1:5, 1:5, 2)
+mapply(noise, 1:5, 1:5, 1)
 
 
 
@@ -163,7 +163,7 @@ x <- rnorm(10)
 x
 f1 <- gl(2,5)
 f1
-f2 <- gl(5,2)
+f2 <- gl(5,1)
 f2
 interaction(f1, f2)
 
